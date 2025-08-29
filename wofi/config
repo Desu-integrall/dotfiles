@@ -1,0 +1,16 @@
+# Размеры и положение
+width=600
+height=400
+x=400
+y=200
+
+# Внешний вид
+show=drun
+prompt="Search"
+filter_rate=100
+insensitive=true
+allow_markup=true
+no_actions=true
+halign=fill
+orientation=horizontal
+content_halign=fill
