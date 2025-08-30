@@ -1,0 +1,223 @@
+* {
+    font-family: "Terminess Nerd Font", "Terminus", "terminus-font", "monospace";
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 0px 1px #768f8b;
+}
+
+window#waybar {
+    background-color: transparent;
+}
+
+.modules-left,
+.modules-center,
+.modules-right {
+    color: #3d5f59;
+    margin: 4px;
+    padding: 1px 4px;
+    background-color: #0d1a18;
+    border: 2px solid #768f8b;
+    border-radius: 5px;
+    box-shadow: 
+        inset 2px 2px 0px 0px rgba(255, 255, 255, 0.2),
+        inset -2px -2px 0px 0px rgba(0, 0, 0, 0.2),
+        3px 3px 0px 0px rgba(0, 0, 0, 0.0);
+}
+#cava,
+#custom-spotify,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#custom-hyprsunset,
+#clock {
+    color: #3d5f59;
+    margin: 4px 2px;
+    padding:0 6px;
+    background-color: #0d2e2c;
+    border: 2px solid #768f8b;
+    border-radius: 5px;
+    box-shadow:
+        inset 2px 2px 0px 0px rgba(255, 255, 255, 0.2),
+        inset -2px -2px 0px 0px rgba(0, 0, 0, 0.2),
+        3px 3px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#taskbar button,
+#workspaces button,
+#custom-start,
+#custom-power {
+    color: #3d5f59;
+    margin: 4px 2px;
+    padding:0 4px;
+    background-color: #0e2221;
+    border: 2px solid #768f8b;
+    border-radius: 5px;
+    box-shadow:
+        inset 2px 2px 0px 0px rgba(255, 255, 255, 0.2),
+        inset -2px -2px 0px 0px rgba(0, 0, 0, 0.2),
+        3px 3px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#workspaces button:hover, 
+#custom-power:hover,
+#custom-start:hover,
+#taskbar button:hover {
+    background-color: #1c7766;
+    color: #1d5a56;
+}
+
+#power-profiles-daemon:hover,
+#cpu:hover,
+#memory:hover,
+#custom-spotify:hover,
+#custom-hyprsunset:hover,
+#cava:hover {
+    background-color: #1c7766;
+    color: #1d5a56;
+}
+
+#workspaces button.active,
+#taskbar button.active {
+    background-color: #8bd4b6;
+    color: #768f8b;
+    box-shadow:
+        inset -2px -2px 0px 0px rgba(255, 255, 255, 0.2), 
+        inset 2px 2px 0px 0px rgba(0, 0, 0, 0.4),
+        3px 3px 0px 0px rgba(0, 0, 0, 0.0);
+}
+#workspaces button.active *,
+#taskbar button.active *,
+#workspaces button:hover *,
+#taskbar button:hover *,
+#workspaces button.urgent * {
+    text-shadow: none;
+}
+
+#workspaces button.urgent {
+    background-color: #0f3837;
+    color: #768f8b;
+}
+
+#custom-start {
+    padding: 0 5px;
+    color: #8bd4b6;
+    background-color: #0d2e2c;
+}
+#custom-start:hover {
+    color: #1d5a56;
+    background-color:  #0f3837;
+}
+#power-profiles-daemon {
+    padding-left: 4px;
+}
+#custom-power {
+    padding: 0 10px 0 8px;
+    color: #1d5a56;
+    background-color: #19524e;
+}
+#custom-power:hover {
+    color: #8bd4b6;
+    background-color:  #567f6f;
+}
+
+#battery {
+    text-shadow: none;
+    padding-left:10px;
+}
+
+#tray {
+    padding-right:4px;
+    padding-left: 2px;
+}
+
+#bluetooth {
+    text-shadow: none;
+    padding-left: 4px;
+}
+
+
+#battery.warning {
+    color: #1d5a56;
+}
+
+#battery.critical {
+    color: #0b1717;
+}
+
+#backlight {
+    text-shadow: none;
+    padding-left:0px;
+    padding-right: 4px;
+    color: #b5dcc4;
+    border: 2px solid transparent;
+}
+
+#backlight-slider slider {
+    border: 1px #94aba8;
+    border-radius: 4px;
+    background-color: #b5dcc4;
+    box-shadow:
+    inset 2px 2px 0px 0px rgba(255, 255, 255, 0.2),
+    inset -2px -2px 0px 0px rgba(0, 0, 0, 0.2),
+    3px 3px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#backlight-slider trough {
+    min-height: 10px;
+    min-width: 100px;
+    border-radius: 4px;
+    border: 1px #94aba8;
+    background-color: #8bd4b6;
+}
+
+#backlight-slider highlight {
+    background-color: #8bd4b6;
+}
+
+#pulseaudio {
+    text-shadow: none;
+    color: #b5dcc4;
+    padding-right: 0px;
+    border: 2px solid transparent;
+}
+
+#pulseaudio-slider slider {
+    border: 1px #94aba8;
+    border-radius: 4px;
+    background-color: #b5dcc4;
+    box-shadow:
+    inset 2px 2px 0px 0px rgba(255, 255, 255, 0.2),
+    inset -2px -2px 0px 0px rgba(0, 0, 0, 0.2),
+    3px 3px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#pulseaudio-slider trough {
+    min-height: 10px;
+    min-width: 100px;
+    border-radius: 4px;
+    border: 1px #94aba8;
+    background-color: #8bd4b6;
+}
+
+#pulseaudio-slider highlight {
+    background-color: #8bd4b6;
+}
+
+@keyframes blink-update {
+	to {
+		background-color: dodgerblue;
+	}
+}
+
+#custom-pacman {
+    text-shadow: none;
+    padding-right: 10px;
+    padding-left: 2px;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+#custom-pacman.pending-updates {
+    background-color: transparent;
+}
